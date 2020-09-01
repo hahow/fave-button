@@ -45,7 +45,11 @@ class ViewController: UIViewController, FaveButtonDelegate{
     
     func faveButton(_ faveButton: FaveButton, didSelected selected: Bool) {
     }
-    
+
+    func faveButton(_ faveButton: FaveButton, willSelect selected: Bool) {
+
+    }
+
     func faveButtonDotColors(_ faveButton: FaveButton) -> [DotColors]?{
         if( faveButton === heartButton || faveButton === loveButton){
             return colors
